@@ -1,2 +1,3 @@
 # DFjava
-A java replica of Dwarf Fortress Adventurer.
+
+Java replica of Dwarf Fortress Adventurer
