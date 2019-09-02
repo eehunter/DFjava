@@ -1,0 +1,56 @@
+package com.oyosite.ticon.rawlib;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class TagContainerBase implements ITagContainer{
+	
+	protected ArrayList<Tag> coreTags = new ArrayList<Tag>();
+	protected ArrayList<Tag> modifierTags = new ArrayList<Tag>();
+	
+	@Override
+	public Tag[] getTags() {
+		List<Tag> list = coreTags;//new ArrayList<Tag>(Arrays.asList(coreTags));
+	    list.addAll(modifierTags);
+	    Tag[] c = (Tag[]) list.toArray();
+		return c;
+	}
+	@Override
+	public void setTags(Tag... tags) {
+		this.coreTags = new ArrayList<Tag>(Arrays.asList(tags));
+		this.modifierTags = new ArrayList<Tag>();
+	}
+	@Override
+	public void addTags(Tag... tags) {
+	    modifierTags.addAll(Arrays.asList(tags));
+	}
+	@Override
+	public void addTag(Tag tag) {
+		modifierTags.add(tag);
+	}
+	@Override
+	public void removeTag(String name) {
+		
+	}
+	@Override
+	public boolean hasTag(String name) {
+		for (int i = 0; i < coreTags.size(); i++) {
+			if (coreTags.get(i).getName() == name) {
+				return true;
+			}
+		}
+		for (int i = 0; i < modifierTags.size(); i++) {
+			if (modifierTags.get(i).getName() == name) {
+				return true;
+			}
+		}
+		return false;
+	}
+	@Override
+	public Tag getTag() {
+		return null;
+	}
+	
+
+}

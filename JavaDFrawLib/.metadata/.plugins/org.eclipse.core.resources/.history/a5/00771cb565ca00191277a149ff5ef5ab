@@ -1,0 +1,11 @@
+package com.oyosite.ticon.rawlib;
+
+public class Tag {
+	
+	public final String name;
+	
+	public Tag (String name) {
+		this.name = name;
+	}
+
+}

@@ -1,0 +1,9 @@
+package com.oyosite.ticon.rawlib.unit;
+
+public interface IUnit {
+	
+	public long x;
+	public long y;
+	
+
+}

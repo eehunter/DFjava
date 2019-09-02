@@ -1,0 +1,5 @@
+package com.oyosite.ticon.rawlib.creature;
+
+public class Creature {
+
+}

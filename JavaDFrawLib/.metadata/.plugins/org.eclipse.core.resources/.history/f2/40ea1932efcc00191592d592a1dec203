@@ -1,0 +1,13 @@
+package com.oyosite.ticon.rawlib.world.material;
+
+import com.oyosite.ticon.rawlib.core.IMaterialSource;
+
+public class Mineral implements IMaterialSource {
+
+	@Override
+	public String name() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

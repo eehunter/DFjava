@@ -1,0 +1,11 @@
+package com.oyosite.ticon.rawlib.world.material;
+
+import com.oyosite.ticon.rawlib.material.MaterialType;
+
+public class MaterailTypeMetal extends MaterialType {
+
+	public MaterailTypeMetal(String id, String name, String pluName, String adjName) {
+		super(id, name, pluName, adjName);
+	}
+
+}

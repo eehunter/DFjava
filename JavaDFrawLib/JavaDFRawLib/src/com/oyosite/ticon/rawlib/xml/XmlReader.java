@@ -1,0 +1,31 @@
+package com.oyosite.ticon.rawlib.xml;
+
+import java.io.File;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+
+import org.w3c.dom.Document;
+
+public class XmlReader {
+	
+	public String dir = "raw"+File.separator;
+	
+	public XmlReader(String dir) {
+		this.dir = dir;
+	}
+	
+	
+	
+	public Document readFile(String file) {
+		try {
+			File xmlFile = new File(dir+file);
+			DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+			DocumentBuilder builder = factory.newDocumentBuilder();
+			Document doc = builder.parse(xmlFile);
+			return doc;
+		}catch(Exception e) {e.printStackTrace();}
+		return null;
+	}
+
+}

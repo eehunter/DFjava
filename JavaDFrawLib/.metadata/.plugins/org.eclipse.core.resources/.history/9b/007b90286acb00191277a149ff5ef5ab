@@ -1,0 +1,9 @@
+package com.oyosite.ticon.rawlib.unit;
+
+public class Unit {
+	
+	public long x;
+	public long y;
+	
+
+}

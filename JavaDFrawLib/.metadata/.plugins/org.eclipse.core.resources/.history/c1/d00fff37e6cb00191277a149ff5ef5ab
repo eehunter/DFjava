@@ -1,0 +1,9 @@
+package com.oyosite.ticon.rawlib.material;
+
+public class MaterialTypeEggYolk extends MaterialType {
+
+	public MaterialTypeEggYolk(String id, String name, String pluName, String adjName) {
+		super("eggyolk", "eggyolk", "eggyolks", "eggyolk");
+	}
+
+}

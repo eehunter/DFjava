@@ -1,0 +1,14 @@
+package com.oyosite.ticon.rawlib.xml;
+
+import org.w3c.dom.Document;
+import org.w3c.dom.NodeList;
+
+public class RawStorage {
+	
+	public static NodeList creatures;
+	
+	public static void injectGameData(Document gameData) {
+		creatures.
+	}
+
+}

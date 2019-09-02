@@ -1,0 +1,9 @@
+package com.oyosite.ticon.rawlib.material;
+
+public class MaterialTypeEggWhite extends MaterialType {
+
+	public MaterialTypeEggWhite(String id, String name, String pluName, String adjName) {
+		super("eggshell", "eggshell", "eggshells", "eggshell");
+	}
+
+}

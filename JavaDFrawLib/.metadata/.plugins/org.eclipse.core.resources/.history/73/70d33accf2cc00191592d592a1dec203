@@ -1,0 +1,19 @@
+package com.oyosite.ticon.rawlib.material.properties;
+
+import com.oyosite.ticon.rawlib.material.IMaterialProperty;
+
+public class MatPropBool implements IMaterialProperty {
+
+	@Override
+	public Object value() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void setValue(Object value) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,28 @@
+package com.oyosite.ticon.rawlib.creature;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
+import com.oyosite.ticon.rawlib.bp.BodyPart;
+
+public class CreatureType {
+	
+	public static final ArrayList<CreatureType> CREATURESTYPES = new ArrayList<CreatureType>();
+	public final ArrayList<BodyPart> BODY_PARTS = new ArrayList<BodyPart>();
+	public final Map<String, Caste> CASTES = new HashMap<String, Caste>();
+	public final String name;
+	
+	public CreatureType(String name) {
+		this.name = name;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+
+}

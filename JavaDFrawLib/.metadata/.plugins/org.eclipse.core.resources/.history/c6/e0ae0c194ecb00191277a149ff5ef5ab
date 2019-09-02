@@ -1,0 +1,11 @@
+package com.oyosite.ticon.rawlib.bp;
+
+public class BodyPart {
+	
+	public static final String name;
+	
+	public BodyPart(String name) {
+		this.name = name;
+	}
+
+}

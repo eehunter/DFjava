@@ -1,0 +1,10 @@
+package com.oyosite.ticon.rawlib.unit;
+
+public class UnitCreature implements IUnit {
+
+	@Override
+	public void setPos(int x, int y, int z) {
+		
+	}
+
+}

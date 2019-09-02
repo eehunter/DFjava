@@ -1,0 +1,101 @@
+package com.oyosite.ticon.rawlib;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+
+import org.w3c.dom.Document;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+
+public class RawStorageBase {
+	
+	DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+	DocumentBuilder builder;
+	
+	public RawStorageBase() {
+		try {
+			builder = factory.newDocumentBuilder();
+			gameDataBP = builder.newDocument();
+			gameDataCreatures = builder.newDocument();
+			gameDataItems = builder.newDocument();
+			gameDataMaterials = builder.newDocument();
+			gameDataCivs = builder.newDocument();
+			gameDataRecipe = builder.newDocument();
+			gameDataKnowledge = builder.newDocument();
+			gameDataPlants = builder.newDocument();
+			gameDataBP.appendChild(gameDataBP.createElement("gameDataBP"));
+			gameDataCreatures.appendChild(gameDataCreatures.createElement("gameDataCreatures"));
+			gameDataItems.appendChild(gameDataItems.createElement("gameDataItems"));
+			gameDataMaterials.appendChild(gameDataMaterials.createElement("gameDataMaterials"));
+			gameDataCivs.appendChild(gameDataCivs.createElement("gameDataBP"));
+			gameDataRecipe.appendChild(gameDataRecipe.createElement("gameDataBP"));
+			gameDataKnowledge.appendChild(gameDataKnowledge.createElement("gameDataBP"));
+			gameDataPlants.appendChild(gameDataPlants.createElement("gameDataBP"));
+		} catch (ParserConfigurationException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	
+
+	public Document gameDataBP;
+	public Document gameDataCreatures;
+	public Document gameDataItems;
+	public Document gameDataMaterials;
+	public Document gameDataCivs;
+	public Document gameDataRecipe;
+	public Document gameDataKnowledge;
+	public Document gameDataPlants;
+	
+	public void injectGameData(Document gameData) {
+		
+		//System.out.println(gameData.toString());
+		
+		NodeList BPNodes = gameData.getElementsByTagName("bp");
+	    for(int i=0; i<BPNodes.getLength(); i++) {
+	    	gameDataBP.importNode(BPNodes.item(i), true);
+	    }
+		
+		NodeList creatureNodes = gameData.getElementsByTagName("creature");
+	    for(int i=0; i<creatureNodes.getLength(); i++) {
+	    	//System.out.println(creatureNodes.item(i).getTextContent());
+	    	Node newCreature = gameDataCreatures.importNode(creatureNodes.item(i), true);
+	    	gameDataCreatures.getDocumentElement().appendChild(newCreature);
+	    	System.out.println(newCreature.getTextContent());
+	    }
+	    
+	    NodeList ItemNodes = gameData.getElementsByTagName("item");
+	    for(int i=0; i<ItemNodes.getLength(); i++) {
+	    	gameDataItems.importNode(ItemNodes.item(i), true);
+	    }
+	    
+	    NodeList MaterialNodes = gameData.getElementsByTagName("material");
+	    for(int i=0; i<MaterialNodes.getLength(); i++) {
+	    	gameDataMaterials.importNode(MaterialNodes.item(i), true);
+	    }
+	    
+	    NodeList CivNodes = gameData.getElementsByTagName("civ");
+	    for(int i=0; i<CivNodes.getLength(); i++) {
+	    	gameDataCivs.importNode(CivNodes.item(i), true);
+	    }
+	    
+	    NodeList RecipeNodes = gameData.getElementsByTagName("recipe");
+	    for(int i=0; i<RecipeNodes.getLength(); i++) {
+	    	gameDataRecipe.importNode(RecipeNodes.item(i), true);
+	    }
+	    
+	    NodeList KnowledgeNodes = gameData.getElementsByTagName("knowledge");
+	    for(int i=0; i<KnowledgeNodes.getLength(); i++) {
+	    	gameDataKnowledge.importNode(KnowledgeNodes.item(i), true);
+	    }
+	    
+	    NodeList PlantNodes = gameData.getElementsByTagName("plant");
+	    for(int i=0; i<PlantNodes.getLength(); i++) {
+	    	gameDataPlants.importNode(PlantNodes.item(i), true);
+	    }
+	}
+	
+	
+
+}

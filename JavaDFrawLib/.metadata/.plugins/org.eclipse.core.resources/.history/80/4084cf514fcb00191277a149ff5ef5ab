@@ -1,0 +1,17 @@
+package com.oyosite.ticon.rawlib.creature;
+
+import java.util.ArrayList;
+
+import com.oyosite.ticon.rawlib.bp.BodyPart;
+
+public class Creature {
+	
+	public static final ArrayList<Creature> CREATURES = new ArrayList<Creature>();
+	public final ArrayList<BodyPart> BODY_PARTS = new ArrayList<BodyPart>();
+	public final ArrayList<Caste> CASTES = new ArrayList<Caste>();
+	
+	public Creature() {
+		
+	}
+
+}

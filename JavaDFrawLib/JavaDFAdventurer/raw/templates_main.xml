@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<templates_main>
+	<template>
+		<name>standard</name>
+		
+		
+		<body_mat>
+			
+			
+			
+		</body_mat>
+		
+		
+		<shell_mat><fireproof>1000</fireproof></shell_mat>
+		<yolk_mat></yolk_mat>
+		<white_mat></white_mat>
+		
+		
+		
+		
+	</template>
+	
+	
+	
+	
+	
+	
+	
+	
+</templates_main>

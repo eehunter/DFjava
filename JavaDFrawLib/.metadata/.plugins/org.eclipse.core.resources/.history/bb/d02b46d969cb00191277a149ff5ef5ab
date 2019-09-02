@@ -1,0 +1,7 @@
+package com.oyosite.ticon.rawlib.fluid;
+
+import com.oyosite.ticon.rawlib.material.MaterialType;
+
+public class FluidType extends MaterialType{
+
+}

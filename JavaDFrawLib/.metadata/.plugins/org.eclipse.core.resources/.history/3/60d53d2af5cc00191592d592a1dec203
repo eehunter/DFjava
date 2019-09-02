@@ -1,0 +1,7 @@
+package com.oyosite.ticon.rawlib.world.material;
+
+import com.oyosite.ticon.rawlib.material.MaterialType;
+
+public class MaterailTypeMetal extends MaterialType {
+
+}

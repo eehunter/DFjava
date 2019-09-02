@@ -1,0 +1,8 @@
+package com.oyosite.ticon.rawlib;
+
+public class TagContainerBase implements ITagContainer{
+	
+	protected Tag[] coreTags;
+	protected Tag[] modifierTags;
+
+}

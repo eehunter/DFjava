@@ -1,0 +1,18 @@
+package com.oyosite.ticon.rawlib;
+
+public class Tag {
+	
+	public final String name;
+	public final TagParameter[] params;
+	
+	public Tag (String name) {
+		this.name = name;
+		this.params = null;
+	}
+	
+	public Tag (String name, TagParameter... params) {
+		this.name = name;
+		this.params = params;
+	}
+
+}

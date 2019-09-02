@@ -1,0 +1,30 @@
+package com.oyosite.ticon.rawlib.world.loader;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import com.oyosite.ticon.rawlib.material.Material;
+import com.oyosite.ticon.rawlib.world.generator.OpenSimplexNoise;
+import com.oyosite.ticon.rawlib.world.material.MaterialTypeStone;
+
+public class WorldStorage {
+	public final long seed;
+	public final OpenSimplexNoise heightNoise;
+	public WorldStorage(long seed) {
+		this.seed = seed;
+		this.heightNoise = new OpenSimplexNoise(seed);
+	}
+	
+	public static final Map<String, Object> worldMap = new HashMap<String, Object>();
+	
+	
+	public void loadTile(long x, long y, long z) {
+		
+	}
+	
+	
+	public Material getTileMaterial(long x, long y, long z) {
+		return new Material(new Mineral, new MaterialTypeStone());
+	}
+	
+}

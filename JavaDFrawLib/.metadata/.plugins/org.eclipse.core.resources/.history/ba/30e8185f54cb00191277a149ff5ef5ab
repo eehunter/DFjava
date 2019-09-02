@@ -1,0 +1,22 @@
+package com.oyosite.ticon.rawlib.item;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import com.oyosite.ticon.rawlib.material.Material;
+
+public class ItemEgg extends Item {
+
+	public ItemEgg(String id, String name, String pluName, String adjName, Material shellMaterial) {
+		Map<String, Material> materials = new HashMap<>();
+		materials.put("shell_mat", shellMaterial);
+		this.id = id;
+		this.name = name;
+		this.pluName = pluName;
+		this.adjName = adjName;
+		this.MATERIALS.putAll(materials);
+	}
+	
+	
+
+}

@@ -1,0 +1,39 @@
+package com.oyosite.ticon.rawlib.creature;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import com.oyosite.ticon.rawlib.bp.BodyPart;
+import com.oyosite.ticon.rawlib.core.IMaterialSource;
+
+public class CreatureType implements IMaterialSource{
+	
+	public final Map<String, BodyPart> BODY_PARTS = new HashMap<String, BodyPart>();
+	public final Map<String, Caste> CASTES = new HashMap<String, Caste>();
+	public final String id;
+	public final String name;
+	public final String pluName;
+	public final String adjName;
+	
+	public CreatureType(String id, String name, String pluName, String adjName) {
+		this.id = id;
+		this.name = name;
+		this.pluName = pluName;
+		this.adjName = adjName;
+	}
+	
+	public void addCaste(String id, Caste caste) {
+		CASTES.put(id, caste);
+	}
+	
+	public void addBodyPart(String id, BodyPart bp) {
+		BODY_PARTS.put(id, bp);
+	}
+	
+	
+	
+	
+	
+	
+
+}

@@ -1,0 +1,9 @@
+package com.oyosite.ticon.rawlib.material;
+
+import com.oyosite.ticon.rawlib.core.IMaterialSource;
+
+public class Material {
+	
+	public IMaterialSource source;
+
+}

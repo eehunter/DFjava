@@ -1,0 +1,24 @@
+package com.oyosite.ticon.rawlib.bp;
+
+import java.util.ArrayList;
+
+public class BodyPart {
+	
+	public static final ArrayList<BodyPart> BODY_PARTS = new ArrayList<BodyPart>();
+	
+	public final String name;
+	public final String id;
+	public boolean think;
+	public boolean breath;
+	public boolean circulate;
+	public boolean eat;
+	public boolean internal;
+	
+	public BodyPart(String name, String id) {
+		this.name = name;
+		this.id = id;
+	}
+	
+	
+
+}

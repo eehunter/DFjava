@@ -1,0 +1,9 @@
+package com.oyosite.ticon.rawlib.unit;
+
+public interface IUnit {
+	
+	public void setPos(int x, int y, int z);
+	public void onUpdate();
+	
+
+}

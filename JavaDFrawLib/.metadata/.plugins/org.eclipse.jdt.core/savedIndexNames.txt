@@ -1,0 +1,19 @@
+INDEX VERSION 1.130+D:\Documents\JavaDFrawLib\.metadata\.plugins\org.eclipse.jdt.core
+3914602987.index
+456183439.index
+268056419.index
+2873565079.index
+645491836.index
+292802629.index
+3287654139.index
+2105317409.index
+1880598848.index
+3320642507.index
+196266912.index
+140000518.index
+2432104727.index
+2737910075.index
+2961230555.index
+153222032.index
+815434151.index
+4087800634.index

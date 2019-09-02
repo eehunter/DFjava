@@ -1,0 +1,42 @@
+package com.oyosite.ticon.rawlib.xml;
+
+import org.w3c.dom.Document;
+import org.w3c.dom.NodeList;
+
+public class RawStorageBase {
+
+	public Document gameDataBP;
+	public Document gameDataCreatures;
+	public Document gameDataItems;
+	public Document gameDataMaterials;
+	public Document gameDataCivs;
+	
+	public void injectGameData(Document gameData) {
+		
+		NodeList BPNodes = gameData.getElementsByTagName("bp");
+	    for(int i=0; i<BPNodes.getLength(); i++) {
+	    	this.gameDataBP.appendChild(BPNodes.item(i));
+	    }
+		
+		NodeList creatureNodes = gameData.getElementsByTagName("creature");
+	    for(int i=0; i<creatureNodes.getLength(); i++) {
+	    	this.gameDataCreatures.appendChild(creatureNodes.item(i));
+	    }
+	    
+	    NodeList ItemNodes = gameData.getElementsByTagName("bp");
+	    for(int i=0; i<ItemNodes.getLength(); i++) {
+	    	this.gameDataItems.appendChild(ItemNodes.item(i));
+	    }
+	    
+	    NodeList MaterialNodes = gameData.getElementsByTagName("bp");
+	    for(int i=0; i<MaterialNodes.getLength(); i++) {
+	    	this.gameDataMaterials.appendChild(MaterialNodes.item(i));
+	    }
+	    
+	    NodeList CivNodes = gameData.getElementsByTagName("bp");
+	    for(int i=0; i<CivNodes.getLength(); i++) {
+	    	this.gameDataCivs.appendChild(CivNodes.item(i));
+	    }
+	}
+
+}

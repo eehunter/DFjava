@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><gameDataTemplates><template>standard</template><template>standard</template><template>standard</template><template>standard</template><template>standard</template><template>standard</template><template>standard</template><template>standard</template><template>standard</template><template>standard</template><template>standard</template><template>standard</template><template>standard</template><template>standard</template><template>
+		<name>standard</name>
+		
+		
+		<body_mat>
+			
+			
+			
+		</body_mat>
+		
+		
+		<shell_mat><fireproof>1000</fireproof></shell_mat>
+		<yolk_mat/>
+		<white_mat/>
+		
+		
+		
+		
+	</template></gameDataTemplates>

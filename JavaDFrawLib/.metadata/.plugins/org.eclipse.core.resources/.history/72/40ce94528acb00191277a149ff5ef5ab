@@ -1,0 +1,39 @@
+package com.oyosite.ticon.rawlib.creature;
+
+import com.oyosite.ticon.rawlib.item.ItemEgg;
+
+public class Caste {
+	
+	public boolean male;
+	public boolean female;
+	public int g_length;
+	public int i_length;
+	public ItemEgg egg = null;
+	public boolean flier;
+	public int weight;
+	
+	public Caste() {
+		
+	}
+	
+	public void setMale(boolean male) {
+		this.male = male;
+	}
+	
+	public void setFemale(boolean female) {
+		this.female = female;
+	}
+	
+	public void setEggItem(ItemEgg eggItem) {
+		this.egg = eggItem;
+	}
+	public void setFlier(boolean flier) {
+		this.flier = flier;
+	}
+	public void setWeight(int weight) {
+		
+	}
+	
+	
+
+}

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><gameDataCreatures><creature>
+		<id>cat</id>
+		<name>cat</name>
+		<pluname>cats</pluname>
+		<adjname>cat</adjname>
+		<desc>A small furry creature that hunts mice.</desc>
+		<pet>1</pet>
+		<damage_limit>20</damage_limit>
+		<body>
+			
+			
+		</body>
+		<body_mat>
+			<template>standard</template>
+			
+			
+		</body_mat>
+		<body_layer>
+			<template>standard</template>
+			<add_layer>fur</add_layer>
+			
+			
+		</body_layer>
+		<caste>
+			<name>male</name>
+			<weight>200</weight>
+			<male/>
+		</caste>
+		<caste>
+			<name>female</name>
+			<weight>200</weight>
+			<female>
+				<g_time>1</g_time>
+			</female>
+		</caste>
+		
+		
+	</creature><creature>
+		<id>dog</id>
+		<name>dog</name>
+		<pluname>dogs</pluname>
+		<adjname>dog</adjname>
+		<desc>A medium furry creature that makes for a loyal companion.</desc>
+		<pet>2</pet>
+		<damage_limit>50</damage_limit>
+		<body>
+			
+			
+		</body>
+		<body_mat>
+			<template>standard</template>
+			
+			
+		</body_mat>
+		<body_layer>
+			<template>standard</template>
+			<add_layer>fur</add_layer>
+			
+			
+		</body_layer>
+		<caste>
+			<name>male</name>
+			<weight>200</weight>
+			<male/>
+		</caste>
+		<caste>
+			<name>female</name>
+			<weight>200</weight>
+			<female>
+				<g_time>2</g_time>
+			</female>
+		</caste>
+		
+		
+	</creature><creature>
+		<id>human</id>
+		<name>human</name>
+		<pluname>humans</pluname>
+		<adjname>human</adjname>
+		<desc>An average sized humanoid with immense versitility.</desc>
+		<playable/>
+		<canopendoors/>
+		<sapiant/>
+		<damage_limit>1000</damage_limit>
+		<body>
+			
+			
+		</body>
+		<body_mat>
+			<template>standard</template>
+			
+			
+		</body_mat>
+		<body_layer>
+			<template>standard</template>
+			<add_layer>hair</add_layer>
+			
+			
+		</body_layer>
+		<caste>
+			<name>male</name>
+			<weight>200</weight>
+			<male/>
+		</caste>
+		<caste>
+			<name>female</name>
+			<weight>200</weight>
+			<female>
+				<g_time>9</g_time>
+			</female>
+		</caste>
+		
+		
+	</creature><creature>
+		<id>dragon</id>
+		<name>dragon</name>
+		<pluname>dragons</pluname>
+		<adjname>draconic</adjname>
+		<desc>A large reptilian creature that can breathe fire.</desc>
+		<playable/>
+		<canopendoors/>
+		<sapiant/>
+		<flier/>
+		<damage_limit>0</damage_limit>
+		<body>
+			
+			
+		</body>
+		<body_mat>
+			<template>standard</template>
+			<all_mat>
+				<fireproof>1000</fireproof>
+			</all_mat>
+			
+			
+		</body_mat>
+		<body_layer>
+			<template>standard</template>
+			<add_layer>scale</add_layer>
+			
+			
+		</body_layer>
+		<caste>
+			<name>male</name>
+			<weight>20000</weight>
+			<male/>
+		</caste>
+		<caste>
+			<name>female</name>
+			<weight>20000</weight>
+			<female>
+				<lays_eggs>
+					<shell_mat><template>standard</template></shell_mat>
+					<yolk_mat><template>standard</template><fireproof>1000</fireproof></yolk_mat>
+					<white_mat><template>standard</template><fireproof>1000</fireproof></white_mat>
+					<chutch_min>1</chutch_min>
+					<chutch_max>3</chutch_max>
+				</lays_eggs>
+				<g_time>6</g_time>
+				<i_time>8</i_time>
+			</female>
+		</caste>
+		<caste>
+			<name>warrior</name>
+			<weight>2000</weight>
+			<male/>
+			<restricted>1</restricted>
+		</caste>
+		<caste>
+			<name>mage</name>
+			<weight>1000</weight>
+			<male/>
+			<restricted>3</restricted>
+		</caste>
+		<caste>
+			<name>immortal</name>
+			<weight>1</weight>
+			<novitals/>
+			<noeat/>
+			<nodrink/>
+			<nosleep/>
+			<restricted>10</restricted>
+			<female>
+				<lays_eggs>
+					<shell_mat><template>standard</template><fireproof>1000</fireproof></shell_mat>
+					<yolk_mat><template>standard</template><fireproof>1000</fireproof></yolk_mat>
+					<white_mat><template>standard</template><fireproof>1000</fireproof></white_mat>
+					<chutch_min>1</chutch_min>
+					<chutch_max>3</chutch_max>
+				</lays_eggs>
+				<g_time>6</g_time>
+				<g_timescale>def</g_timescale>
+				<i_time>8</i_time>
+				<i_timescale>def</i_timescale>
+			</female>
+		</caste>
+		
+		
+	</creature></gameDataCreatures>

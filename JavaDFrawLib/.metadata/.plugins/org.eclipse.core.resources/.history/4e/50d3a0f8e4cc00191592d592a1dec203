@@ -1,0 +1,5 @@
+package com.oyosite.ticon.rawlib.world.generator;
+
+public class NoiseMapGenerator {
+
+}

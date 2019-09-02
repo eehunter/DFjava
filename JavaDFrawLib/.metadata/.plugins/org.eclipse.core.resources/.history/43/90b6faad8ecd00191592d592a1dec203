@@ -1,0 +1,18 @@
+package com.oyosite.ticon.rawlib.unit;
+
+import com.oyosite.ticon.rawlib.creature.CreatureType;
+
+public class UnitPlayer extends UnitCreature{
+
+	public UnitPlayer(CreatureType creature) {
+		super(creature);
+	}
+	
+	@Override
+	public void onUpdate() {
+		super.onUpdate();
+		
+		
+	}
+
+}

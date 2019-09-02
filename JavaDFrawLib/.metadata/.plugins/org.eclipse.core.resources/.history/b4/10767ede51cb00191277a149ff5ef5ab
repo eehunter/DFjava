@@ -1,0 +1,5 @@
+package com.oyosite.ticon.rawlib.item;
+
+public class ItemEgg extends Item {
+
+}

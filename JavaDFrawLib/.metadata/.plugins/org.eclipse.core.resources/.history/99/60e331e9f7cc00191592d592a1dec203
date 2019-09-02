@@ -1,0 +1,16 @@
+package com.oyosite.ticon.rawlib.world.loader;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class WorldStorage {
+	public final long seed;
+	public WorldStorage(long seed) {
+		this.seed = seed;
+	}
+	
+	public static final Map<String, Object> worldMap = new HashMap<String, Object>();
+	
+	
+	
+}

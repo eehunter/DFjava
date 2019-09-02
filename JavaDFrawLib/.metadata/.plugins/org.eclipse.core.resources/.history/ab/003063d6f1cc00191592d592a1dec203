@@ -1,0 +1,8 @@
+package com.oyosite.ticon.rawlib.material;
+
+public interface IMaterialProperty {
+	
+	public Object value();
+	public void setValue();
+
+}

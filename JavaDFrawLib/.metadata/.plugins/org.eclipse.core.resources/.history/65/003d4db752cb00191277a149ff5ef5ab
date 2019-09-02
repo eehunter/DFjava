@@ -1,0 +1,12 @@
+package com.oyosite.ticon.rawlib.item;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import com.oyosite.ticon.rawlib.material.Material;
+
+public class Item {
+	
+	public final Map<String, Material> MATERIALS = new HashMap<String, Material>();
+
+}

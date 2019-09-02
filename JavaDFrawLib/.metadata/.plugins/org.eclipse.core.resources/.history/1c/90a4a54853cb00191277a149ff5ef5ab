@@ -1,0 +1,11 @@
+package com.oyosite.ticon.rawlib.item;
+
+public class ItemEgg extends Item {
+
+	public ItemEgg(String id, String name, String pluName, String adjName) {
+		super(id, name, pluName, adjName);
+	}
+	
+	
+
+}

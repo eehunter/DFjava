@@ -1,0 +1,18 @@
+package com.oyosite.ticon.rawlib.material;
+
+public class MaterialType {
+	
+
+	public final String id;
+	public final String name;
+	public final String pluName;
+	public final String adjName;
+	
+	public MaterialType(String id, String name, String pluName, String adjName) {
+		this.id = id;
+		this.name = name;
+		this.pluName = pluName;
+		this.adjName = adjName;
+	}
+
+}

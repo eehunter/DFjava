@@ -1,0 +1,26 @@
+package com.oyosite.ticon.rawlib.unit;
+
+import com.oyosite.ticon.rawlib.core.GameObjectRegistry;
+
+public class UnitCreature implements IUnit {
+	
+	public String position;
+
+	@Override
+	public void setPos(int x, int y, int z) {
+		boolean cont = true;
+		int index = 0;
+		while (cont) {
+			if (GameObjectRegistry.UNITS.get(x+"-"+y+'-'+z+"-"+index) != null) {
+				index++;
+			}else {
+				cont = false;
+			}
+			
+		}
+		GameObjectRegistry.UNITS.put(position, null);
+		position = x+"-"+y+'-'+z+"-"+index;
+		GameObjectRegistry.UNITS.put(position, this);
+	}
+
+}

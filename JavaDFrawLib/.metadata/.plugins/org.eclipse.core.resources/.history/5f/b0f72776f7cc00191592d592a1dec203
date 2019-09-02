@@ -1,0 +1,11 @@
+package com.oyosite.ticon.rawlib.world.loader;
+
+public class WorldStorage {
+	public final long seed;
+	public WorldStorage(long seed) {
+		this.seed = seed;
+	}
+	
+	
+	
+}

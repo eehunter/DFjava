@@ -1,0 +1,12 @@
+package com.oyosite.ticon.rawlib.fluid;
+
+import com.oyosite.ticon.rawlib.core.IMaterialSource;
+import com.oyosite.ticon.rawlib.material.Material;
+
+public class Fluid extends Material{
+
+	public Fluid(IMaterialSource source, FluidType type) {
+		super(source, type);
+	}
+
+}

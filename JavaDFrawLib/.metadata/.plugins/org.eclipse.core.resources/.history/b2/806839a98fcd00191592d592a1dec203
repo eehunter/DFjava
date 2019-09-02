@@ -1,0 +1,31 @@
+package com.oyosite.ticon.rawlib.unit;
+
+import com.oyosite.ticon.rawlib.world.loader.WorldStorage;
+
+public class UnitItemStack implements IUnit{
+
+	public String position;
+
+	@Override
+	public void setPos(int x, int y, int z) {
+		boolean cont = true;
+		int index = 0;
+		while (cont) {
+			if (WorldStorage.worldMap.get(x+"-"+y+'-'+z+"-"+index) != null) {
+				index++;
+			}else {
+				cont = false;
+			}
+			
+		}
+		WorldStorage.worldMap.put(position, null);
+		position = x+"-"+y+'-'+z+"-"+index;
+		WorldStorage.worldMap.put(position, this);
+	}
+
+	@Override
+	public void onUpdate() {
+		
+	}
+
+}
