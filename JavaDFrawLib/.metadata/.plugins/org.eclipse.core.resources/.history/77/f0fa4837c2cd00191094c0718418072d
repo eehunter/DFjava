@@ -146,12 +146,12 @@ public class Main {
 			//System.out.println(y == Long.parseLong(ppos[1]));
 			
 			
-			if (coords[3].equalsIgnoreCase("0") && y == Long.parseLong(ppos[1])-1 && rx<96 && rx>0 && rz<55 && rz>0 ) {
+			if (coords[3].equalsIgnoreCase("0") && y == Long.parseLong(ppos[1]) && rx<96 && rx>0 && rz<55 && rz>0 ) {
 				System.out.println("set a tile at: "+rx+", "+rz);
-				Color color = new Color(((Material)v).type.color.getRed()/255, ((Material)v).type.color.getGreen()/255, ((Material)v).type.color.getBlue()/255, 1.0f);
-				Color bgColor = new Color(((Material)v).type.bgColor.getRed()/255, ((Material)v).type.bgColor.getGreen()/255, ((Material)v).type.bgColor.getBlue()/255, 1.0f);
+				Color color = new Color(((Material)world.getTileObject(x, y, z)).type.color.getRed()/255, ((Material)world.getTileObject(x, y, z)).type.color.getGreen()/255, ((Material)world.getTileObject(x, y, z)).type.color.getBlue()/255, 1.0f);
+				Color bgColor = new Color(((Material)world.getTileObject(x, y, z)).type.bgColor.getRed()/255, ((Material)world.getTileObject(x, y, z)).type.bgColor.getGreen()/255, ((Material)world.getTileObject(x, y, z)).type.bgColor.getBlue()/255, 1.0f);
 				//System.out.println("set a tile");
-				RenderEngine.setTile((int)rx, (int)rz, new Tile(((Material)v).type.character, color, bgColor, 0.0d));
+				RenderEngine.setTile((int)rx, (int)rz, new Tile(((Material)world.getTileObject(x, y, z)).type.character, color, bgColor, 0.0d));
 			
 		}}});
 		RenderEngine.setTile(1, 1, new Tile('▓', new Color(1, 1, 1, 1), new Color(0, 0, 0, 1), 0.0d));

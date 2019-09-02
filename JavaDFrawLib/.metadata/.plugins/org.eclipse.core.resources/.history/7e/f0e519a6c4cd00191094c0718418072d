@@ -118,7 +118,7 @@ public class Main {
 			startIndex++;
 		}
 		player.setPos(0, startY, 0);
-		world.loadArea(-100, startY-5, -100, 100, startY+5, 100);
+		world.loadArea(100, startY+5, 100, -100, startY-5, -100);
 		
 		world.worldMap.forEach((k, v)->{if (k != null) {
 			long x = 0, y = 0, z = 0, px = 0, py = 0, pz = 0, rx = 0, ry = 0, rz = 0;
