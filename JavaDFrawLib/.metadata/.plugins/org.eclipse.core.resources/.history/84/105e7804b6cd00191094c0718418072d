@@ -48,7 +48,6 @@ public class Main {
 		
 		//MainScreen.parameter.characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.:,;\'\"()!?+-*/=â–ˆ█▓▒░│┤╡╢╖╕╣║╗╝╜╛┐└┴┬├─┼╞╟╚╔╩╦╠═♠╬╧╨╤╥╙╘╒╓♣╪╫┘◘┌";
 		
-		DesktopLauncher.main(args);
 		
 		img = null;
 		try {
@@ -158,6 +157,8 @@ public class Main {
 		//RenderEngine.renderScene();
 		System.out.println(RenderEngine.getTile(1, 1).character);
 		System.out.println(startY);
+
+		DesktopLauncher.main(args);
 		
 		//System.out.println(NoiseMapGenerator.noise(120.357, 0.264, 0.252));
 		//System.out.println(raws.gameDataCreatures.getDocumentElement().getTextContent());
